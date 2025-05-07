@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.Hight-Tatras,
+.Orava-top,
+.Bojnice-top,
+.sulov-top, {
+  margin: 30px;
+  height: auto;
+}
+
+.Hight-Tatras{
+  background-color: rgb(141, 206, 206);
+  height: 300px;
+}
+#places-slovakia {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.main-tatras {
+  text-align: center;
+  font-weight: 600;
+}
+
+p {
+  align-items: justify;
+}
+
+img.tatry-float {
+  float: left;
+  height: 280px;
+  width: 500px;
+  margin: 40px;
+  background-color: rgb(225, 221, 221);
+}
+
+img.tatry-area {
+  float: right;
+  width: 500px;
+  margin: 40px;
+}
+
+.tatry-winter {
+  clear: both;
+  margin: 40px;
+  gap: 0;
+}
+
+.orava,
+.tatry-winter,
+.bojnice {
+  padding-bottom: 10px;
+}
+
+img.orava-castle {
+  float: right;
+  height: 350px;
+  margin-left: 35px;
+  background-color: rgb(225, 221, 221);
+}
+
+img.sulov-rock {
+  float: right;
+  width: 550px;
+  margin: 15px;
+}
+
+img.night {
+  float: left;
+  margin:5px;
+}
+
+img.bojnice-castle {
+  float: left;
+  height: 350px;
+  margin: 10px;
+  background-color: rgb(225, 221, 221);
+  padding: 10px;
+  border:3px;
+}
+
+img.orava-castle {
+  float: right;
+  height: 350px;
+  margin-left: 35px;
+  background-color: rgb(225, 221, 221);
+}
+
+img.bratislava-river {
+position: absolute;
+}
+
+.bojnice {
+  overflow: hidden;
+  /* overflow around image */
+  padding-bottom: 20px;
+}
+.Bojnice-top{
+  background-color:  rgb(141, 206, 206);
+  height: 550px;
+}
+.sulov-text {
+  padding-bottom: 20px;
+}
+.bratislava-top{
+  height:300px;
+}
+
+
+.overlay{
+  position:absolute;
+  top: 100px;; 
+  color:yellow;
+  width:100%; 
+  opacity:0;
+  color: beige;
+  text-align:center;
+  font-size:10px;
+}
+.bratislava-relative:hover .overlay{
+  opacity:1
+}
+.picture-text {
+  font-weight: 600;
+  text-align: center;
+  margin: 40px;
+}
+
+.picture-slovakia {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 300px;
+  background-color:  rgb(141, 206, 206);
+}
+
+.slovakia-viaduct {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+.slovakia-tatry {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+h4 {
+  margin: 15px;
+  color:blue;
+}
+.info-text{       /*parent of inline */
+  text-align: center;
+  font-weight: 600;
+  background-color: rgb(141, 206, 206);
+  height: 40px;
+}
+.text-info{
+  display: inline;
+}

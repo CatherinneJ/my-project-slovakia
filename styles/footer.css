@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:2px;
+    box-sizing: border-box;
+}
+footer{
+    height:90px;
+    background-color: rgb(9, 39, 96);
+    color:white;
+    }
+
+.footer-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-around;
+}
+hr{
+    border-top: none;
+    border-color: white;  
+}
+.footer-menu{
+    list-style: none;
+}
+.footer-sekcion{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.fab {
+    color: rgb(159, 232, 232);
+  }

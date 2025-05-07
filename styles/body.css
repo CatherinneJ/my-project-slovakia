@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(93, 93, 250);
+    background-image: url("../images/bratislava.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.explore-country {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 50px;
+    width: auto;
+    text-align: center;
+    gap: 1rem;
+    margin: 150px;
+}
+
+p {
+    color: aliceblue;
+}
+
+.first-article {
+    display: inline-block;
+    text-align: justify;
+    height: 200px;
+    width: 800px;
+    gap: 5rem;
+    margin-left: 250px;
+    margin-right: 250px;
+}
