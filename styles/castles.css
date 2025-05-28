@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(119, 220, 220);
+    color:rgb(24, 5, 87);
+    overflow-x: hidden;
+}
+
+.gradient-text{
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: 600;
+    padding-top: 1rem;
+    background: linear-gradient(90deg,#4a27a4, #1ba366);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    display: inline-block;
+}
+
+.text-trencin, 
+.text-bratislava, 
+.text-bojnice, 
+.text-orava, 
+.text-budmerice{
+    font-size: medium;
+}
+.trencin-text,
+.bratislava-text, 
+.budmerice-text, 
+.bojnice-text,
+.orava-text{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+}
+.trencin-first, 
+.bratislava-first,
+.budmerice-first, 
+.orava-first, 
+.bojnice-first{
+    display: flex;
+    align-items: flex-start;
+    margin: 4rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.image-container{
+    flex-shrink: 0;
+}
+.around-img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+.all-text{
+flex: 1;
+display: flex;
+flex-direction: column;
+text-align: justify;
+}
