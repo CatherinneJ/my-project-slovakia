@@ -4,20 +4,28 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(119, 220, 220);
-    color:rgb(24, 5, 87);
+    background-color: rgb(152, 243, 243);
+    color:rgb(5, 5, 113);
     overflow-x: hidden;
 }
-
+.castel-section{
+    padding:2rem;
+    padding-inline:2.5rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.heading-container{
+    text-align:center;
+    margin-bottom: 2rem;
+    margin: 1rem;
+}
 .gradient-text{
-    font-size: 30px;
+    font-size: 2rem;
     font-style: oblique;
-    font-weight: 600;
-    padding-top: 1rem;
-    background: linear-gradient(90deg,#4a27a4, #1ba366);
+    font-weight: bold;
+    background: linear-gradient(90deg,#1028c6, #ac30c5);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
-    display: inline-block;
 }
 
 .text-trencin, 
@@ -32,9 +40,8 @@ body{
 .budmerice-text, 
 .bojnice-text,
 .orava-text{
-    flex:1;
-    display: flex;
-    flex-direction: row;
+    max-width:600px;
+    text-align: justify;
 }
 .trencin-first, 
 .bratislava-first,
@@ -42,10 +49,13 @@ body{
 .orava-first, 
 .bojnice-first{
     display: flex;
-    align-items: flex-start;
-    margin: 4rem;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content: space-evently;
     gap: 3rem;
     flex-wrap: wrap;
+    padding-left: 5rem;
+    margin: 1.5em;rem;
 }
 .image-container{
     flex-shrink: 0;
@@ -55,11 +65,10 @@ body{
     height: 350px;
     object-fit: cover;
     border-radius: 50%;
-    aspect-ratio: 1/1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .all-text{
-flex: 1;
-display: flex;
-flex-direction: column;
-text-align: justify;
+font-size:1rem;
+line-height:1.6;
+margin-bottom: 1rem;
 }
