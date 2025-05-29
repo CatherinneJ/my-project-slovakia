@@ -148,3 +148,60 @@ nav ul li a:active,
 .nav-menu {
     list-style: none;
 }
+@media (max-width: 1023px) and (min-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .left-section {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .middle-section {
+        margin: 0.5rem 0;
+        width: 90%;
+        max-width: 400px;
+        justify-content: center;
+    }
+
+    .search-bar {
+        width: 70%;
+    }
+
+    .right-section {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .right-section .main-nav .nav-menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content li a {
+        color: white;
+        background-color: rgb(9, 39, 96);
+        margin: 2px 0;
+    }
+
+    .dropdown-content li a:hover {
+        background-color: rgb(0, 90, 200);
+    }
+}
