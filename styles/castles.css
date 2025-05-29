@@ -190,3 +190,71 @@ body {
         -webkit-text-fill-color: transparent;
     }
 }
+@media screen and (max-width: 768px) {
+    .gradient-text {
+        font-size: 1.6rem;
+        font-style: oblique;
+        font-weight: bold;
+        background: linear-gradient(90deg, #c61010, #ac30c5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .trencin-first,
+    .budmerice-first,
+    .orava-first,
+    .bojnice-first,
+    .bratislava-first {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem 0;
+        gap: 2rem;
+    }
+       .trencin-text,
+    .budmerice-text,
+    .bojnice-text,
+    .orava-text,
+    .bratislava-text {
+        padding: 0 1rem;
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .image-container,
+    .image-wrapper {
+        max-width: 250px;
+        width: 100%;
+    }
+.around-img,
+    .around-img2 {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 15px var(--box-shadow);
+        height: auto;
+        display: block;
+    }
+
+    .decoration-image {
+        width: 50%;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        box-shadow: 0 4px 15px var(--box-shadow);
+        opacity: 0.95;
+        object-fit: cover;
+        bottom: 0;
+        right: 0;
+    }
+
+    .heading-container {
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .all-text {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
