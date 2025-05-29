@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(152, 243, 243);
+}
+#form-wrapper{
+    font-family: sans-serif;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+.formular-rad .message-rad div{
+    flex:1;
+}
+.contact-box{
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    padding:2rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+.contact-form h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.formular-rad{
+    display: flex;
+    gap:1rem;
+    margin-bottom:1rem;
+}
+.formular-rad div{
+    flex:1;
+}
+label{
+display: block;
+margin-bottom: 0.3rem;
+font-weight:bold;
+}
+input, textarea{
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+.form-submit{
+    text-align: right;
+    margin-top: 1.5rem;
+}
+.sub-button{
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-size:1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    animation:none;
+    background: linear-gradient(90deg, #FF52AF, #5361ff);
+    transition: transform 0.2s, opacity 0.3s;
+}
+.sub-button:hover{
+animation:bump 0.3s ease;
+opacity:0.9;
+}
+.form-space{
+    margin-bottom: 1rem;
+}
+@keyframes bump {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
