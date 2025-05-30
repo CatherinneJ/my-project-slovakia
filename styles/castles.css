@@ -114,6 +114,21 @@ body {
     box-shadow: 0 4px 15px var(--box-shadow);
     opacity: 0.95;
     object-fit: cover;
+    transition: transform 1s ease, opacity 1s ease;
+}
+/*move image away*/
+#animation-picture:target{
+    animation: moveAway 1s forwards;
+}
+@keyframes moveAway{
+    0% {
+        transform:translateX(0);
+        opacity: 0.95;
+    }
+    100%{
+        transform: translateX(100vw);
+        opacity:0;
+    }
 }
 
 .around-img2 {

@@ -18,11 +18,32 @@ body{
 .contact-box{
     max-width: 500px;
     width: 100%;
-    background-color: white;
+    background-color: rgb(219, 216, 216);
     padding:2rem;
     border: 2px solid #ccc;
     border-radius: 10px;
+    color: #0815a1;
     box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+.inform{
+    font-size: 1rem;
+    color: #0815a1;
+}
+.info{
+    color:rgb(62, 60, 60);
+}
+.contact-info{
+    line-height: 1.6;
+    margin-right: 10rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    max-height: 300px;
+    color:blue;
+     /* background-color: rgb(219, 216, 216); */
+     padding: 2rem;
 }
 .contact-form h2{
     text-align: center;
@@ -66,7 +87,7 @@ input, textarea{
     border-radius: 6px;
     cursor: pointer;
     animation:none;
-    background: linear-gradient(90deg, #FF52AF, #5361ff);
+    background: linear-gradient(90deg, yellow, #0815a1);
     transition: transform 0.2s, opacity 0.3s;
 }
 .sub-button:hover{
