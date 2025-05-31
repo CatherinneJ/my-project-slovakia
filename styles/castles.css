@@ -9,8 +9,8 @@
 }
 
 body {
-    background-color: rgb(152, 243, 243);
-    color: rgb(5, 5, 113);
+    background-color:  rgb(239, 237, 237);
+    color: black;
     overflow-x: hidden;
 }
 
@@ -31,7 +31,7 @@ body {
     font-size: 2rem;
     font-style: oblique;
     font-weight: bold;
-    background: linear-gradient(90deg, #1028c6, #ac30c5);
+    background: linear-gradient(90deg, #1028c6, rgb(13, 185, 201));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -119,16 +119,6 @@ body {
 /*move image away*/
 #animation-picture:target{
     animation: moveAway 1s forwards;
-}
-@keyframes moveAway{
-    0% {
-        transform:translateX(0);
-        opacity: 0.95;
-    }
-    100%{
-        transform: translateX(100vw);
-        opacity:0;
-    }
 }
 
 .around-img2 {
