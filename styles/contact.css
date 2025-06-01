@@ -6,11 +6,12 @@
 
 .body-main {
     background-color: rgb(204, 249, 249);
-    max-height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding:2rem;
 }
 
 .container {
@@ -193,4 +194,93 @@ textarea {
     100% {
         transform: scale(1);
     }
+}
+@media (max-width: 950px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+  .container .content .right-side {
+    width: 75%;
+    margin-left: 55px;
+    margin-top: 0;
+  }
+#form-wrapper {
+  padding-top: 3rem;
+}
+  /* remove the vertical line */
+  .content .left-side::before{
+    display: none;
+  }
+  
+  .form-submit {
+    text-align: center;
+  }
+}
+@media (max-width: 820px) {
+   .body-main {
+    padding: 1rem;
+  }
+#form-wrapper {
+  padding-top: 3rem;
+}
+   .container {
+    margin: 40px 0;
+    height: 100%;
+  }
+    .container .content {
+    flex-direction: column;
+  }
+   .container .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container .content .left-side::before {
+    display: none;
+  }
+  .container .left-side i{
+    font-size: 0.9rem;
+  }
+  .sub-button {
+    width: 100%;
+  }
+  .container .content .right-side {
+    width: 100%;
+    margin-left: 0;
+  } 
+
+  .content .left-side .details i{
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  .sub-button {
+    width: 100%;
+  }
+
+  .topic-text {
+    font-size: 1.1rem;
+  }
+
+  .topic-p {
+    font-size: 0.8rem;
+  }
+  .topic{
+    font-size: 1rem;
+  }
+.text-inform,
+.text-inform2{
+    font-size:0.8rem;
+    
+}
+  input,
+  textarea {
+    font-size: 0.95rem;
+  }
+  .formular-rad{
+    flex-direction: column;
+  }
 }
