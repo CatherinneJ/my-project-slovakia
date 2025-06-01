@@ -43,3 +43,42 @@ hr{
     text-decoration: none;
     color: white;
   }
+
+  @media (max-width: 1023px) {
+  footer {
+    padding: 20px 10px;
+    height: auto;
+    text-align: center;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .icon-bottom a {
+    margin: 0 8px;
+    font-size: 18px;
+  }
+
+  hr {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 480px) {
+  footer {
+    font-size: 14px;
+}
+.footer-sekcion{
+    max-width: 500px;
+    margin:auto;
+  }
+}

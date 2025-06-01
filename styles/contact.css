@@ -77,6 +77,7 @@
 .topic-text{
     animation: pulse 2s infinite;
 }
+/* stretches the text */
 @keyframes pulse {
   0% {
     transform: scale(1);

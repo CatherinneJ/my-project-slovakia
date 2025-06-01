@@ -64,6 +64,7 @@ header {
     font-family: Arial;
     font-size: 16px;
 }
+
 .right-section .main-nav .nav-menu {
     display: flex;
     align-items: center;
@@ -92,7 +93,7 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgb(9,39,96);
+    background-color: rgb(9, 39, 96);
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
     list-style: none;
     min-width: 120px;
@@ -108,21 +109,23 @@ header {
     display: block;
 }
 
-nav ul li a:link{
-    padding:0;
+nav ul li a:link {
+    padding: 0;
 }
 
 
 .dropdown-content li a {
-    display:block;
+    display: block;
     padding: 10px;
     color: white;
     text-decoration: none;
-    white-space:nowrap;
+    white-space: nowrap;
 }
-.dropdown-content li a:hover{
-    background-color: rgb(0,90,200);
+
+.dropdown-content li a:hover {
+    background-color: rgb(0, 90, 200);
 }
+
 .main-nav .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -148,7 +151,9 @@ nav ul li a:active,
 .nav-menu {
     list-style: none;
 }
-@media (max-width: 1023px) and (min-width: 768px) {
+
+
+@media (max-width: 1023px) and (min-width: 769px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -204,4 +209,170 @@ nav ul li a:active,
     .dropdown-content li a:hover {
         background-color: rgb(0, 90, 200);
     }
+
+    header {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+        align-items: center;
+        position: relative;
+    }
+
+    .left-section,
+    .middle-section {
+        width: 100%;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .right-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+        background-color: rgb(9, 39, 96);
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+        padding: 10px;
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: block;
+        position: static;
+        box-shadow: none;
+        background-color: rgb(9, 39, 96);
+    }
+
+    .dropdown-content a {
+        padding-left: 40px;
+    }
+
+    .left-section,
+    .middle-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .right-section {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: rgb(9, 39, 96);
+        padding: 0;
+        gap: 10px;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu a {
+        display: block;
+        width: 100%;
+        padding: 12px 20px;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+        position: relative;
+    }
+
+    .flag {
+        padding-left: 0;
+    }
+
+    .left-section,
+    .middle-section {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .right-section {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+
+    .right-section .main-nav .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding: 0;
+    }
+
+    .dropdown-content {
+        display: block;
+        position: static;
+        box-shadow: none;
+        background-color: rgb(9, 39, 96);
+    }
+
+    .dropdown-content a {
+        padding-left: 40px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        /* width: 100%; */
+        background-color: rgb(9, 39, 96);
+        padding: 0;
+        gap: 10px;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu a {
+        display: block;
+        width: 100%;
+        padding: 12px 20px;
+        color: white;
+        text-decoration: none;
+    }
+
 }
