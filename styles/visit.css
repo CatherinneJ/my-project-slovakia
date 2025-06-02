@@ -2,63 +2,123 @@
   margin: 0;
   padding: 2px;
   box-sizing: border-box;
+
+}
+
+body {
+  font-family: sans-serif;
   text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+}
+
+img.tatry-float,
+img.tatry-area,
+img.orava-castle,
+img.bojnice-castle,
+img.sulov-rock {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+
+}
+
+.Hight-Tatras {
+  padding: 3rem;
+  position: relative;
+  z-index: 1;
+  min-height: 50px;
+}
+
+.Hight-Tatras::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12%;
+  width: 100%;
+  background-color: rgb(141, 206, 206);
+  z-index: -1;
 }
 
 .Hight-Tatras,
 .Orava-top,
 .Bojnice-top,
-.sulov-top, {
-  margin: 30px;
+.sulov-top,
+.bratislava-top {
   height: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
-.Hight-Tatras{
-  background-color: rgb(141, 206, 206);
-  height: 300px;
+.Hight-Tatras {
+  background-color: rgb(225, 221, 221);
 }
+
 #places-slovakia {
   text-align: center;
   padding-top: 15px;
+  font-size: 1.75rem;
 }
 
 .main-tatras {
   text-align: center;
   font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-p {
+.tatry-winter {
   align-items: justify;
 }
 
 img.tatry-float {
   float: left;
   height: 280px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   margin: 40px;
   background-color: rgb(225, 221, 221);
 }
 
 img.tatry-area {
   float: right;
-  width: 500px;
+  width: 100%;
+  height: 280px;
+  max-width: 500px;
   margin: 40px;
+  background-color: rgb(225, 221, 221);
+}
+
+.orava,
+.bojnice,
+.bratislava-text {
+  overflow: hidden;
 }
 
 .tatry-winter {
   clear: both;
+  text-align: center;
   margin: 40px;
-  gap: 0;
+  padding-bottom: 10px;
 }
 
 .orava,
 .tatry-winter,
 .bojnice {
   padding-bottom: 10px;
+  text-align: justify;
 }
 
 img.orava-castle {
   float: right;
+  max-width: 280px;
+  width: 100%;
   height: 350px;
   margin-left: 35px;
   background-color: rgb(225, 221, 221);
@@ -66,99 +126,316 @@ img.orava-castle {
 
 img.sulov-rock {
   float: right;
-  width: 550px;
+  width: 100%;
+  max-width: 280px;
   margin: 15px;
 }
 
 img.night {
   float: left;
-  margin:5px;
+  margin: 5px;
+  width: 100%;
+  max-width: 280px;
 }
 
 img.bojnice-castle {
   float: left;
+  max-width: 280px;
+  width: 100%;
   height: 350px;
   margin: 10px;
   background-color: rgb(225, 221, 221);
   padding: 10px;
-  border:3px;
 }
 
 img.orava-castle {
   float: right;
+  width: 100%;
+  max-width: 280px;
   height: 350px;
   margin-left: 35px;
   background-color: rgb(225, 221, 221);
 }
 
 img.bratislava-river {
-position: absolute;
+  position: absolute;
 }
 
 .bojnice {
   overflow: hidden;
-  /* overflow around image */
+  /* overflow around image  */
   padding-bottom: 20px;
 }
-.Bojnice-top{
-  background-color:  rgb(141, 206, 206);
-  height: 550px;
+
+.Bojnice-top {
+  position: relative;
+  z-index: 1;
+  min-height: 200px;
+  margin-top: 5rem;
 }
+
+.Bojnice-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background-color: rgb(141, 206, 206);
+  z-index: -1;
+}
+
 .sulov-text {
   padding-bottom: 20px;
 }
-.bratislava-top{
-  height:300px;
-}
 
-
-.overlay{
-  position:absolute;
-  top: 100px;; 
-  color:yellow;
-  width:100%; 
-  opacity:0;
+.overlay {
+  position: absolute;
+  top: 100px;
+  ;
+  width: 100%;
+  opacity: 0;
   color: beige;
-  text-align:center;
-  font-size:10px;
+  text-align: center;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+  font-size: 10px;
+  pointer-events: none;
 }
-.bratislava-relative:hover .overlay{
-  opacity:1
+
+.bratislava-relative:hover .overlay {
+  opacity: 1
 }
+
 .picture-text {
   font-weight: 600;
   text-align: center;
+  margin-top: 1rem;
   margin: 40px;
+}
+
+.bratislava-relative {
+  position: relative;
 }
 
 .picture-slovakia {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 300px;
-  background-color:  rgb(141, 206, 206);
+  background-color: rgb(141, 206, 206);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 5rem;
+  justify-items: center;
+
 }
 
-.slovakia-viaduct {
-  grid-row: 1/2;
-  grid-column: 3/4;
+.picture-slovakia img {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.slovakia-tatry {
-  grid-row: 2/3;
-  grid-column: 2/3;
+.image-wrapper {
+  width: 100%;
+  max-width: 300px;
 }
 
 h4 {
+  text-align: center;
   margin: 15px;
-  color:blue;
+  color: blue;
+  font-size: large;
 }
-.info-text{       /*parent of inline */
+
+.info-text {
+  /*parent of inline */
   text-align: center;
   font-weight: 600;
   background-color: rgb(141, 206, 206);
-  height: 40px;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
 }
-.text-info{
+
+.text-info {
   display: inline;
+}
+
+@media (max-width: 1024px) {
+
+  .Hight-Tatras,
+  .Orava-top,
+  .Bojnice-top,
+  .sulov-top,
+  .bratislava-top {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .picture-slovakia {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2rem;
+  }
+
+  img.orava-castle {
+    float: right;
+    max-width: 280px;
+    height: 350px;
+    margin-left: 35px;
+    background-color: rgb(225, 221, 221));
+  }
+
+  img.bojnice-castle {
+    float: left;
+  max-width: 45%;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(225, 221, 221);
+  }
+img.sulov-rock{
+  float:right;
+    max-width: 45%;
+    height: 350px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(225, 221, 221);
+}
+  img.night {
+    float: left;
+    margin: 5px;
+    max-width: 280px;
+  }
+
+  img.tatry-float,
+  img.tatry-area{
+     max-width: 45%;
+    height: 350px;
+    float: both;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .bratislava-top {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .bratislava-relative {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .overlay {
+    top: 80px;
+    font-size: 0.8rem;
+  }
+
+  .image-wrapper {
+    max-width: 100%;
+     margin: 0 auto;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #places-slovakia {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+
+  .main-tatras {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .picture-slovakia {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  img.orava-castle,
+  img.bojnice-castle,
+  img.night {
+    float: none !important;
+    margin: 1rem auto;
+    display: block;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .tatry-winter,
+  .orava,
+  .bojnice,
+  .sulov-text,
+  .bratislava-text,
+  .info-text {
+    font-size: 0.95rem;
+    margin: 0 auto 2rem auto;
+    text-align: justify;
+    display: block;
+    width: 100%;
+    float: none !important;
+    position: sticky !important;
+    z-index: auto;
+  }
+
+
+  .overlay {
+    font-size: 0.7rem;
+    top: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+
+  img,
+  img.tatry-float,
+  img.tatry-area,
+  img.night {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 1rem auto;
+    float: none !important;
+  }
+
+  .bratislava-top {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .bratislava-relative {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .image-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .tatry-winter,
+  .orava,
+  .bojnice,
+  .sulov-text,
+  .bratislava-text {
+    margin-bottom: 2rem;
+  }
 }
