@@ -9,7 +9,11 @@ body {
   font-family: sans-serif;
   text-align: justify;
 }
-
+h3{
+  font-size: 1.5rem;
+  text-align: center;
+   color:blue;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -25,7 +29,6 @@ img.sulov-rock {
   width: 100%;
   max-width: 400px;
   height: auto;
-
 }
 
 .Hight-Tatras {
@@ -223,7 +226,7 @@ img.bratislava-river {
   background-color: rgb(141, 206, 206);
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding: 0 5rem;
+  padding: 1.5rem 5rem;
   justify-items: center;
 
 }
@@ -333,8 +336,11 @@ img.sulov-rock{
      margin: 0 auto;
   }
 
-  h4 {
+  h3 {
     font-size: 1.1rem;
+      background: linear-gradient(90deg, #c61010, #ac30c5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
 }
 
