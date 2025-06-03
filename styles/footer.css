@@ -3,10 +3,13 @@
     padding:2px;
     box-sizing: border-box;
 }
-footer{
+footer#footer{
     height:90px;
-    background-color: rgb(9, 39, 96);
-    color:white;
+    background-color: rgb(9, 39, 96)!important;
+    color:white!important;
+    z-index: 1;
+    position: relative;
+    padding:1rem 0;
     }
 
 .footer-menu{

@@ -13,7 +13,14 @@ body {
     color: black;
     overflow-x: hidden;
 }
-
+.fixed-image {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 100px;
+  height: auto;
+}
 .castel-section {
     padding: 2rem;
     padding-inline: 2.5rem;
@@ -59,7 +66,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-evently;
+    justify-content: space-evenly;
     gap: 3rem;
     flex-wrap: wrap;
     padding-left: 5rem;

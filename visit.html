@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>This is Slovakia</title>
 </head>
 
 <body>
-    <Header>
+    <header>
         <div class="left-section">
             <img class="flag" src="images/flag.jpg" alt="flag">
         </div>
         <div class="middle-section">
-            <input class="search-bar" type="text" placeholder="Search">
-            <button class="search-button">
+            <input class="search-bar" type="text" placeholder="Search" aria-label="Search">
+            <button class="search-button" aria-label="Submit search">
                 <img class="search-icon" src="images/search-button.png" alt="search-icon">
             </button>
         </div>
@@ -28,7 +27,7 @@
             <nav class="main-nav" aria-label="Primary Navigation"> <!--use a dropdown-content-->
                 <ul class="nav-menu">
                     <li><a class="home" href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./404.html">About</a></li>
                     <li class="dropdown">
                         <a class="abc" href="./visit.html">Visit</a>
                         <ul class="dropdown-content">
@@ -40,13 +39,13 @@
                 </ul>
             </nav>
         </div>
-    </Header>
+    </header>
     <main>
         <h3 id="places-slovakia">There are many attractive places for tourists in Slovakia.</h3>
         <p class="main-tatras">The most attractive destinations are the capital of Bratislava and the High Tatras.</p>
     </main>
     <section class="Hight-Tatras">
-        <h4>High Tatras</h4>
+        <h4 class="text-center my-4 text-blue-600 text-3xl font-bold text-blue-800">High Tatras</h4>
 
         <a href="#">
             <img src="images/tatry-winter.jpg" alt="tatry-winter" class="tatry-float" height="280px ">
@@ -69,7 +68,7 @@
             The Tatras also have several climatic spas.</p>
         </p>
         <section class="Orava-top">
-            <h4>Orava</h4>
+            <h4 class="text-center my-4 text-blue-600 text-3xl font-bold text-blue-800">Orava</h4>
             <a href="#">
                 <img src="images/orava-castle.png" alt="orava-castle" class="orava-castle">
             </a>
@@ -92,7 +91,7 @@
         </section>
 
         <section class="Bojnice-top">
-            <h4>Bojnice Castle</h4>
+            <h4 class="text-center my-4 text-blue-600 text-3xl font-bold text-blue-800">Bojnice Castle</h4>
             <a href="#">
                 <img src="images/bojnice-castle.jpg" alt="bojnice-castle" class="bojnice-castle">
             </a>
@@ -145,7 +144,7 @@
             </div>
         </section>
         <section class="Bratislava-top">
-            <h4>Bratislava</h4>
+            <h4 class="text-center my-4 text-blue-600 text-3xl font-bold text-blue-800">Bratislava</h4>
             <div class="bratislava-top">
                 <div class="bratislava-relative" style="position:relative; width:50%; max-width:220px;">
                     <figure>
@@ -221,6 +220,7 @@
                         <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
+            </div>
         </footer>
 </body>
 

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>404 - page not found</title>
     <style>
-    body {
+    #notfound {
       margin: 0;
       padding: 0;
       font-family: sans-serif;
@@ -32,23 +32,29 @@
       margin-bottom: 2rem;
     }
 
-    a {
-      text-decoration: none;
-      background: #457b9d;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 5px;
-    }
+    #home{
+   text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  color: white;
+  background: linear-gradient(90deg, yellow, #0815a1);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#home:hover {
+  background-color: #457b9d;
+}
   </style>
 </head>
 <body>
-     <Header>
+     <header>
         <div class="left-section">
             <img class="flag" src="images/flag.jpg" alt="flag">
         </div>
         <div class="middle-section">
-            <input class="search-bar" type="text" placeholder="Search">
-            <button class="search-button">
+            <input class="search-bar" type="text" placeholder="Search" aria-label="Search">
+            <button class="search-button" aria-label="Submit search">
                 <img class="search-icon" src="images/search-button.png" alt="search-icon">
             </button>
         </div>
@@ -56,7 +62,7 @@
             <nav class="main-nav" aria-label="Primary Navigation"> <!--use a dropdown-content-->
                 <ul class="nav-menu">
                     <li><a class="home" href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./404.html">About</a></li>
                     <li class="dropdown">
                         <a class="abc" href="./visit.html">Visit</a>
                         <ul class="dropdown-content">
@@ -68,10 +74,13 @@
                 </ul>
             </nav>
         </div>
-    </Header>
-    <h1>404</h1>
-  <p>Up! 404 – Page Not Found.</p>
-  <a href="/">Back to home</a>
+    </header>
+    <main>
+        <div id="notfound">
+            <h1>404</h1>
+          <p>Oops! 404 – Page Not Found. <a id="home" href="./index.html">Back to home</a></p>
+        </div>
+    </main>
     <footer id="footer">
             <div class="footer-sekcion">
                 <div class="footer-item">
@@ -98,6 +107,7 @@
                         <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
+            </div>
         </footer>
     
 </body>
