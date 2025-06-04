@@ -182,8 +182,9 @@ body {
     opacity: 0;
   }
 }
+
 @media screen and (max-width: 1024px) {
-  .trencin-first,
+    .trencin-first,
   .budmerice-first,
   .orava-first,
   .bojnice-first,

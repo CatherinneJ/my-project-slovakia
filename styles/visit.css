@@ -21,7 +21,7 @@ img {
   border-radius: 14px;
 }
 
-img.tatry-float,
+img.tatry-winter,
 img.tatry-area,
 img.orava-castle,
 img.bojnice-castle,
@@ -264,7 +264,12 @@ img.bratislava-river {
 
 @media (max-width: 1024px) {
 
-  .Hight-Tatras,
+
+  .Hight-Tatras{
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+
   .Orava-top,
   .Bojnice-top,
   .sulov-top,
@@ -288,7 +293,7 @@ img.bratislava-river {
 
   img.bojnice-castle {
     float: left;
-  max-width: 45%;
+   max-width: 45%;
     height: 350px;
     margin: 10px;
     padding: 10px;
@@ -312,11 +317,10 @@ img.sulov-rock{
 
   img.tatry-float,
   img.tatry-area{
-     max-width: 45%;
+    width: 60%;
     height: 350px;
-    float: both;
-    margin: 20px auto;
     display: block;
+    text-align: center;
   }
 
   .bratislava-top {
