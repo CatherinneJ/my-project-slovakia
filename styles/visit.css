@@ -131,12 +131,14 @@ img.sulov-rock {
   float: right;
   width: 100%;
   max-width: 280px;
+  height: 350px;
   margin: 15px;
+   background-color: rgb(225, 221, 221);
 }
 
 img.night {
   float: left;
-  margin: 5px;
+  margin: 15px;
   width: 100%;
   max-width: 280px;
 }
@@ -195,7 +197,6 @@ img.bratislava-river {
 .overlay {
   position: absolute;
   top: 100px;
-  ;
   width: 100%;
   opacity: 0;
   color: beige;
@@ -251,7 +252,7 @@ img.bratislava-river {
   text-align: center;
   font-weight: 600;
   background-color: rgb(141, 206, 206);
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   padding: 1rem;
   position: relative;
   z-index: 1;
@@ -303,8 +304,10 @@ img.sulov-rock{
 }
   img.night {
     float: left;
-    margin: 5px;
-    max-width: 280px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 45%;
+    height:350px;
   }
 
   img.tatry-float,
@@ -397,11 +400,9 @@ img.sulov-rock{
     padding: 0 1rem;
   }
 
-
-  img,
   img.tatry-float,
   img.tatry-area,
-  img.night {
+  img.sulov-rock {
     display: block;
     max-width: 90%;
     height: auto;
